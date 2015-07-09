@@ -73,7 +73,6 @@ body {
 .nav-menu.in { max-height: 500px; }
 .nav-menu ul { list-style-type: none; padding: 10px 0px 10px; }
 .nav-menu ul li { padding: 10px 0px; }
-.nav-menu ul li a { color: #ADA7B5; font-size: 20px; text-decoration: none; }
 .nav-menu ul li a:hover,
 .nav-menu ul li.active a { color: #FFF; font-weight: bold; }
 
@@ -90,7 +89,7 @@ p {
 
 .footer {
 	padding: 2%;
-	background: #00E5EE;
+	background: black;
 }
 
 section {
@@ -129,13 +128,20 @@ section p {
 	overflow: hidden;
 }
 
-section .container h3 { position: relative; padding-bottom: 20px }
+section .container h3 { 
+	font-family: 'Open Sans', sans-serif;
+	text-transform: uppercase;
+	text-shadow: 1px 1px 1px #333;
+	letter-spacing: 4px;
+	position: relative; 
+	padding-bottom: 20px 
+}
 section .container h3:after
 {
 	padding-top: 20px;
     content: ' ';
     display: inline-block;
-    border-bottom: 4px dashed #00E5EE;
+    border-bottom: 4px dashed black;
     width: 80px;
     position: absolute;
     bottom: 0px;
