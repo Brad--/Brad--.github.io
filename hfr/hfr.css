@@ -3,8 +3,9 @@
  body {
  	background-color: #f9e7cb;
  	font-family: 'Open Sans', sans-serif;
- 	padding-left:  5%;
-    padding-right: 5%;
+ 	font-size: 110%;
+ 	padding-left:  10%;
+    padding-right: 10%;
  }
 .head {
 	letter-spacing: 4px;
@@ -14,7 +15,7 @@
 	text-align: center;
 }
 .builder {
-	display: inline-block;
+	display: block;
 }
 
 .form-group, .form-group-2 {
@@ -26,7 +27,7 @@
 }
 
 label {
-	white-space: nowrap;
+	white-space: default;
 }
 
 h3 > a,
