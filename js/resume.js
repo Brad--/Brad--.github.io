@@ -7,9 +7,9 @@ $(document).ready(function() {
 
   var $root = $('html,body');
   $('a').on('click', function(e) {
-    if($(this).href.substr(0, 5) === 'https')
-      return;
-      
+    if($(this).attr('href').substr(0, 5) === 'https')
+      return
+
     e.preventDefault();
     $root.animate({
       scrollTop:$('[name="' + $.attr(this, 'href').substr(1) + '"]')
