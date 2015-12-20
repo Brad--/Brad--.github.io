@@ -17,12 +17,12 @@
     <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css"> -->
 
 
-  
+
 
   <!-- <link rel="stylesheet" href="bootstrap.css"> -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    
+
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,16 +40,16 @@
 
   $(document).ready( function() {
       $('.btn-file :file').on('fileselect', function(event, numFiles, label) {
-          
+
           var input = $(this).parents('.form-group-file').find(':text'),
               log = numFiles > 1 ? numFiles + ' files selected' : label;
-          
+
           if( input.length ) {
               input.val(log);
           } else {
               if( log ) alert(log);
           }
-          
+
       });
   });
   function submit() {
@@ -94,8 +94,8 @@
                   </ul>
                 </li>
                   </ul>
-                
-              
+
+
             </div>
           </div>
         </nav>
@@ -197,11 +197,11 @@
       <!-- Line eight Form Input  -->
       <div class="form-group builder">
         <div class="col-xs-5">
-          <label>May the <abbr title="Architectural Control Committee">ACC</abbr> respond to your request via email?</label> 
+          <label>May the <abbr title="Architectural Control Committee">ACC</abbr> respond to your request via email?</label>
         </div>
         <div class="col-xs-1"><input type="checkbox" value=""></div>
         <div class="col-xs-5">
-          <label>May the <abbr title="Architectural Control Committee">ACC</abbr> respond to your builder request via email?</label> 
+          <label>May the <abbr title="Architectural Control Committee">ACC</abbr> respond to your builder request via email?</label>
         </div>
         <div class="col-xs-1"><input type="checkbox" value=""></div>
       </div>
@@ -211,7 +211,7 @@
         <div class="col-xs-3">
           <div class="btn btn-default btn-file">
             Browse&hellip;<input type="file">
-          </div>  
+          </div>
         </div>
         <div class="col-xs-9">
           <input type="text" class="form-control" placeholder="Site Plan File Upload" readonly>
@@ -247,14 +247,14 @@
         </div>
       </div>
 
-      <div class="form-group">
+      <!-- <div class="form-group"> -->
         <div class="col-xs-6">
           <label>Location</label><textarea class="form-control" rows="4" id="roof"></textarea>
         </div>
         <div class="col-xs-6">
           <label>Posts / Railing</label><textarea class="form-control" rows="4" id="roof_warranty"></textarea>
         </div>
-      </div>
+      <!-- </div> -->
 
       <div class="form-group">
         <div class="col-xs-6">
@@ -264,7 +264,7 @@
           <label>Electric</label><textarea class="form-control" rows="4" id="roof_warranty"></textarea>
         </div>
       </div>
-      
+
       <div class="form-group">
         <div class="col-xs-6"><label>Underground / Invisible</label><textarea class="form-control" rows="4" id="roof_warranty"></textarea></div>
         <div class="col-xs-6">
@@ -276,7 +276,7 @@
         <div class="col-xs-6">
           <div class="btn btn-default btn-lg" onclick="submit()">
             Submit
-          </div>  
+          </div>
         </div>
       </div>
       <h style="opacity: 0;">:)</h>
