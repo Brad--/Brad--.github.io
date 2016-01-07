@@ -13,7 +13,7 @@ $(document).ready(function() {
     e.preventDefault();
     $root.animate({
       scrollTop:$('[name="' + $.attr(this, 'href').substr(1) + '"]')
-        .oroots likeffset().top - 50}, 500);
+        .offset().top - 50}, 500);
   });
 
 });
